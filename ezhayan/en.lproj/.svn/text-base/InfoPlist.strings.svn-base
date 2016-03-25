@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  ezhayan
+
+  Created by ChenFengbo on 16/2/25.
+  Copyright © 2016年 ChenFengbo. All rights reserved.
+*/
+
+CFBundleDisplayName = "Blink life";

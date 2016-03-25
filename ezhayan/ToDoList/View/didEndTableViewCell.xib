@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="164" id="KGk-i7-Jjw" customClass="didEndTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="159"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="158"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="todo3_content_bgup" translatesAutoresizingMaskIntoConstraints="NO" id="Cev-gK-teu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="9"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="9" id="ii2-wf-Ptt"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryR-zK-NWr">
+                        <rect key="frame" x="0.0" y="9" width="320" height="86"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuf-iw-Aai">
+                                <rect key="frame" x="15" y="15" width="290" height="56"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="你是我的小呀小苹果，">
+                                        <attributes>
+                                            <color key="NSColor" red="0.37647058820000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="13" name="PingFangSC-Regular"/>
+                                            <font key="NSOriginalFont" size="13" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="你是我的小呀小苹果，你是我的小呀小苹果，你是我的小呀小苹果，你是我的小呀小苹果，你是我的小呀小苹果，你是我的小呀小苹果，你是我的小呀小苹果，你是我的小呀小苹果，">
+                                        <attributes>
+                                            <color key="NSColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="13" name="PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="4" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fuf-iw-Aai" secondAttribute="trailing" constant="15" id="GYb-yp-f0u"/>
+                            <constraint firstItem="fuf-iw-Aai" firstAttribute="top" secondItem="ryR-zK-NWr" secondAttribute="top" constant="15" id="cua-pB-QN3"/>
+                            <constraint firstItem="fuf-iw-Aai" firstAttribute="leading" secondItem="ryR-zK-NWr" secondAttribute="leading" constant="15" id="wQz-mY-blY"/>
+                            <constraint firstAttribute="bottom" secondItem="fuf-iw-Aai" secondAttribute="bottom" constant="15" id="xTu-1B-ygC"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TGA-VM-1tp">
+                        <rect key="frame" x="0.0" y="96" width="320" height="45"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015.10.30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="leY-or-VsO">
+                                <rect key="frame" x="80" y="15" width="66" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="处理时间：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVj-MN-FCg">
+                                <rect key="frame" x="15" y="15" width="65" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="6bw-n8-2j3"/>
+                            <constraint firstItem="sVj-MN-FCg" firstAttribute="leading" secondItem="TGA-VM-1tp" secondAttribute="leading" constant="15" id="DLv-9b-qIC"/>
+                            <constraint firstItem="sVj-MN-FCg" firstAttribute="centerY" secondItem="TGA-VM-1tp" secondAttribute="centerY" id="Qw2-8e-bJ7"/>
+                            <constraint firstItem="leY-or-VsO" firstAttribute="leading" secondItem="sVj-MN-FCg" secondAttribute="trailing" id="TRo-aK-TV8"/>
+                            <constraint firstItem="leY-or-VsO" firstAttribute="centerY" secondItem="TGA-VM-1tp" secondAttribute="centerY" id="rhq-tS-VcT"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8nU-Ze-jl9">
+                        <rect key="frame" x="0.0" y="142" width="320" height="15"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="jEj-4g-WMn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8nU-Ze-jl9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8d6-AP-3pV"/>
+                    <constraint firstAttribute="bottom" secondItem="8nU-Ze-jl9" secondAttribute="bottom" constant="1" id="Btf-lo-BUX"/>
+                    <constraint firstAttribute="trailing" secondItem="8nU-Ze-jl9" secondAttribute="trailing" id="DTz-p0-3pb"/>
+                    <constraint firstItem="ryR-zK-NWr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="E8Z-9w-jmV"/>
+                    <constraint firstItem="TGA-VM-1tp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FUX-6U-XbC"/>
+                    <constraint firstItem="8nU-Ze-jl9" firstAttribute="top" secondItem="TGA-VM-1tp" secondAttribute="bottom" constant="1" id="FcW-bg-tLe"/>
+                    <constraint firstAttribute="trailing" secondItem="Cev-gK-teu" secondAttribute="trailing" id="MkC-bX-yAb"/>
+                    <constraint firstItem="ryR-zK-NWr" firstAttribute="top" secondItem="Cev-gK-teu" secondAttribute="bottom" id="Nsf-VP-dsd"/>
+                    <constraint firstAttribute="trailing" secondItem="ryR-zK-NWr" secondAttribute="trailing" id="Qia-ch-4aB"/>
+                    <constraint firstItem="TGA-VM-1tp" firstAttribute="top" secondItem="ryR-zK-NWr" secondAttribute="bottom" constant="1" id="YWx-FC-KDs"/>
+                    <constraint firstAttribute="trailing" secondItem="TGA-VM-1tp" secondAttribute="trailing" id="t4Z-KH-LFz"/>
+                    <constraint firstItem="Cev-gK-teu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vv1-5e-4St"/>
+                    <constraint firstItem="Cev-gK-teu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xYT-ic-zAL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="content" destination="fuf-iw-Aai" id="php-Ui-Zme"/>
+                <outlet property="time" destination="leY-or-VsO" id="QLS-vy-4cA"/>
+            </connections>
+            <point key="canvasLocation" x="305" y="377.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="todo3_content_bgup" width="375" height="9"/>
+    </resources>
+</document>

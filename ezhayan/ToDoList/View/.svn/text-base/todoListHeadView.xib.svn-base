@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="todoListHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="181"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="70g-86-cLY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="181"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home.1_content_bg01" translatesAutoresizingMaskIntoConstraints="NO" id="5T7-9E-wG6">
+                    <rect key="frame" x="151" y="15" width="72" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="ENw-TJ-YEN"/>
+                        <constraint firstAttribute="width" constant="72" id="ykt-a0-iej"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zua-V3-YgN">
+                    <rect key="frame" x="96" y="131" width="184" height="42"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="新建待办" backgroundImage="todo_an">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didNewToDo:" destination="iN0-l3-epB" eventType="touchUpInside" id="h9l-rM-eSt"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小王子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKB-HB-MZc">
+                    <rect key="frame" x="159" y="96" width="57" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Zua-V3-YgN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6ug-3K-zj9"/>
+                <constraint firstItem="5T7-9E-wG6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="GHE-iN-k9L"/>
+                <constraint firstItem="qKB-HB-MZc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HWu-1Q-kek"/>
+                <constraint firstAttribute="trailing" secondItem="70g-86-cLY" secondAttribute="trailing" id="Hdx-Et-nWI"/>
+                <constraint firstItem="70g-86-cLY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WOp-ld-pBt"/>
+                <constraint firstItem="5T7-9E-wG6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="YKa-dc-ra9"/>
+                <constraint firstItem="70g-86-cLY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZyI-sc-dhD"/>
+                <constraint firstAttribute="bottom" secondItem="70g-86-cLY" secondAttribute="bottom" id="jEl-aT-7K5"/>
+                <constraint firstItem="qKB-HB-MZc" firstAttribute="top" secondItem="5T7-9E-wG6" secondAttribute="bottom" constant="9" id="mgQ-Yu-gtS"/>
+                <constraint firstItem="Zua-V3-YgN" firstAttribute="top" secondItem="qKB-HB-MZc" secondAttribute="bottom" constant="12" id="sKf-om-xzV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgImg" destination="70g-86-cLY" id="s3S-9i-uYH"/>
+                <outlet property="headImg" destination="5T7-9E-wG6" id="cnW-fj-reN"/>
+                <outlet property="nickName" destination="qKB-HB-MZc" id="XcU-fg-xQV"/>
+            </connections>
+            <point key="canvasLocation" x="303.5" y="594.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home.1_content_bg01" width="90" height="90"/>
+        <image name="todo_an" width="184" height="42"/>
+    </resources>
+</document>

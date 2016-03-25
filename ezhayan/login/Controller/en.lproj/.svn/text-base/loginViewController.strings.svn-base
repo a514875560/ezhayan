@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "第三方登录"; ObjectID = "Mts-0H-Bt2"; */
+"Mts-0H-Bt2.text" = "Third party login";
+
+/* Class = "UIButton"; normalTitle = "快速注册"; ObjectID = "PSJ-zu-3Wu"; */
+"PSJ-zu-3Wu.normalTitle" = "Register";
+
+/* Class = "UITextField"; placeholder = "手机／用户名"; ObjectID = "eNG-5Y-0Hg"; */
+"eNG-5Y-0Hg.placeholder" = "Phone Number／User Name";
+
+/* Class = "UIButton"; normalTitle = "忘记密码？"; ObjectID = "kxe-uK-k2f"; */
+"kxe-uK-k2f.normalTitle" = "Forget Password";
+
+/* Class = "UIButton"; normalTitle = "登录"; ObjectID = "u4R-ND-leU"; */
+"u4R-ND-leU.normalTitle" = "Login";
+
+/* Class = "UITextField"; placeholder = "请输入登录密码"; ObjectID = "yFn-58-mzi"; */
+"yFn-58-mzi.placeholder" = "Password";

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="scheduleDayView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2015年11月3日 星期一" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Be-af-VXy">
+                    <rect key="frame" x="75" y="2" width="170" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xD-cp-fig">
+                    <rect key="frame" x="38" y="1" width="23" height="23"/>
+                    <state key="normal" image="schedule4_content_ioc_left"/>
+                    <connections>
+                        <action selector="didLast:" destination="iN0-l3-epB" eventType="touchUpInside" id="YNr-rj-dD1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKI-IZ-5rl">
+                    <rect key="frame" x="259" y="1" width="23" height="23"/>
+                    <state key="normal" image="schedule4_content_ioc_right"/>
+                    <connections>
+                        <action selector="didNext:" destination="iN0-l3-epB" eventType="touchUpInside" id="wu5-7Q-CLD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="NKI-IZ-5rl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="8kR-9M-z2c"/>
+                <constraint firstItem="NKI-IZ-5rl" firstAttribute="leading" secondItem="0Be-af-VXy" secondAttribute="trailing" constant="14" id="9WJ-Uf-Cd7"/>
+                <constraint firstItem="9xD-cp-fig" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IhA-Aj-Q2N"/>
+                <constraint firstItem="0Be-af-VXy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="U97-uk-JwC"/>
+                <constraint firstItem="0Be-af-VXy" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="eGG-Fs-FS3"/>
+                <constraint firstItem="0Be-af-VXy" firstAttribute="leading" secondItem="9xD-cp-fig" secondAttribute="trailing" constant="14" id="gFG-pX-Q89"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateTime" destination="0Be-af-VXy" id="Bl0-6d-fNY"/>
+            </connections>
+            <point key="canvasLocation" x="171" y="577"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="schedule4_content_ioc_left" width="23" height="23"/>
+        <image name="schedule4_content_ioc_right" width="23" height="23"/>
+    </resources>
+</document>

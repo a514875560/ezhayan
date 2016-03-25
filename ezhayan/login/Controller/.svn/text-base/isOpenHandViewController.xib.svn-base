@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="isOpenHandViewController">
+            <connections>
+                <outlet property="notOpenBut" destination="XSN-9a-VcP" id="1l7-Ya-eHf"/>
+                <outlet property="openBut" destination="77t-Z7-uVe" id="mn1-tF-W8X"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否开启手势密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WrZ-MI-jQj">
+                    <rect key="frame" x="99" y="98" width="176" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77t-Z7-uVe">
+                    <rect key="frame" x="15" y="158" width="345" height="47"/>
+                    <color key="backgroundColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="grA-fG-wxC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="开启">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="didOpen:" destination="-1" eventType="touchUpInside" id="bO0-5d-XKH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSN-9a-VcP">
+                    <rect key="frame" x="15" y="225" width="345" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="3h5-wS-hVd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="暂不开启">
+                        <color key="titleColor" red="0.25098039220000001" green="0.70588235290000001" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didNotOpen:" destination="-1" eventType="touchUpInside" id="Rro-V8-KOe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="XSN-9a-VcP" firstAttribute="top" secondItem="77t-Z7-uVe" secondAttribute="bottom" constant="20" id="3Se-0T-nVy"/>
+                <constraint firstAttribute="trailing" secondItem="77t-Z7-uVe" secondAttribute="trailing" constant="15" id="M0S-ya-ZA4"/>
+                <constraint firstItem="WrZ-MI-jQj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="98" id="O4x-v7-l2g"/>
+                <constraint firstItem="XSN-9a-VcP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="S8h-Vv-Smd"/>
+                <constraint firstAttribute="trailing" secondItem="XSN-9a-VcP" secondAttribute="trailing" constant="15" id="XWx-Xf-1vA"/>
+                <constraint firstItem="WrZ-MI-jQj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Xoe-Wc-YOO"/>
+                <constraint firstItem="77t-Z7-uVe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="jRe-Jx-1ZO"/>
+                <constraint firstItem="77t-Z7-uVe" firstAttribute="top" secondItem="WrZ-MI-jQj" secondAttribute="bottom" constant="33" id="jWd-il-bxp"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+</document>

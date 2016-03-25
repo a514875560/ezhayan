@@ -1,0 +1,74 @@
+//
+//  ezhayan-Prefix.pch
+//  ezhayan
+//
+//  Created by ChenFengbo on 15/10/21.
+//  Copyright © 2015年 ChenFengbo. All rights reserved.
+//
+
+#ifndef ezhayan_Prefix_pch
+#define ezhayan_Prefix_pch
+
+#import "UIUtils.h"
+#import "UIViewExt.h"
+#import "Commtion.h"
+#import "WXDataServer.h"
+#import "UserModel.h"
+#import "SVProgressHUD.h"
+#import "UIImageView+AFNetworking.h"
+#import "XLForm.h"
+
+//#define baseUrl @"http://121.41.101.152:8098/campus/"
+
+#define baseUrl @"http://w3.ezhayan.com/ezhayan/"
+//#define baseUrl @"http://192.168.1.111:8080/ezhayan/"
+
+#define imgsUrl @"http://app176.ezhayan.com/rs/"
+//#define imgsUrl @"http://192.168.1.200:8080/campus.rs/"
+//图片拼接路径
+#define imgUrl @"http://apprs.ezhayan.com/app/"
+
+#define IS_IOS8_LATER ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+
+/// 获取系统版本
+#define kSystemVersion [[UIDevice currentDevice].systemVersion floatValue]
+
+#define kTabBarViewHeight 49
+#define kStatusNavigationHeight (kSystemVersion >= 7.0 ? 64 : 0)
+//当前设备的屏幕宽度
+#define kDeviceWidth [UIScreen mainScreen].bounds.size.width
+//当前设备的屏幕高度
+#define KDeviceHeight [UIScreen mainScreen].bounds.size.height
+#define kTableHeight (kSystemVersion >= 7.0) ? KDeviceHeight : KDeviceHeight - kTabBarViewHeight - kStatusNavigationHeight
+
+#pragma mark - 存储标识符
+#define kKeyChainIdentifier @"userInfo"
+
+//黑灰色
+#define appTextGayColor [UIUtils colorWithHexString:@"#606060"]
+
+//绿色
+#define appTabbarColor [UIUtils colorWithHexString:@"#3ae0ca"]
+
+//登录导航栏绿色
+#define loginNavbarColor [UIUtils colorWithHexString:@"#40b49c"]
+
+//橙色
+#define appButtonColor [UIUtils colorWithHexString:@"#EA8100"]
+
+//浅灰色
+#define appBackColor [UIUtils colorWithHexString:@"#f3f3f3"]
+
+//标签栏黑色
+#define appTabbarBgColor [UIUtils colorWithHexString:@"#2d2d2d"]
+
+//导航栏黑色
+#define appNavbarBgColor [UIUtils colorWithHexString:@"#3a414a"]
+
+//tableviewBgColor
+#define appTableviewBgColor [UIUtils colorWithHexString:@"#f0eff5"]
+
+
+#define KEY @"DE76E3EC39801CEEE0440014"
+
+#endif /* ezhayan_Prefix_pch */

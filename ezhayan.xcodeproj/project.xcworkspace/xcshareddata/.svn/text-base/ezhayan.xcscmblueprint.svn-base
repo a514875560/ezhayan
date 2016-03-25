@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "bc16cb62-5e9f-4b46-a189-217f0eb38f89++3157",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "bc16cb62-5e9f-4b46-a189-217f0eb38f89++3157" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "bc16cb62-5e9f-4b46-a189-217f0eb38f89++3157" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F82B3D93-C913-4D5A-BC92-E10ADA21338F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "bc16cb62-5e9f-4b46-a189-217f0eb38f89++3157" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ezhayan",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ezhayan.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/s.ezhayan.com\/svn\/ezhayan",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "bc16cb62-5e9f-4b46-a189-217f0eb38f89++3157"
+    }
+  ]
+}

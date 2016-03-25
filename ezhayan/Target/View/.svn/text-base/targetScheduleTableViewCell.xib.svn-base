@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="targetScheduleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:15--13:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hj6-RI-7PH">
+                        <rect key="frame" x="15" y="22" width="131" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="3sU-cD-AYi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10月23至10月23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyF-TD-nzm">
+                        <rect key="frame" x="15" y="50" width="99" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.47058823529411764" green="0.47058823529411764" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xz-ah-1gg">
+                        <rect key="frame" x="170" y="23" width="117" height="39"/>
+                        <attributedString key="attributedText">
+                            <fragment content="你是我的小苹果你是我的小苹果">
+                                <attributes>
+                                    <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="object1_content_right" translatesAutoresizingMaskIntoConstraints="NO" id="cNy-dw-iUi">
+                        <rect key="frame" x="295" y="29" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Yqd-cx-osh"/>
+                            <constraint firstAttribute="width" constant="25" id="rWj-lM-yBu"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hj6-RI-7PH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="0oO-kN-q4H"/>
+                    <constraint firstItem="hyF-TD-nzm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="2zl-7g-OH3"/>
+                    <constraint firstItem="cNy-dw-iUi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="810-PI-PQb"/>
+                    <constraint firstItem="hj6-RI-7PH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="ClI-V1-H55"/>
+                    <constraint firstItem="8Xz-ah-1gg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="D5r-y7-3Hv"/>
+                    <constraint firstItem="8Xz-ah-1gg" firstAttribute="leading" secondItem="hj6-RI-7PH" secondAttribute="trailing" constant="24" id="Ml9-Wu-h9y"/>
+                    <constraint firstAttribute="trailing" secondItem="cNy-dw-iUi" secondAttribute="trailing" id="SBl-fx-i6B"/>
+                    <constraint firstItem="hyF-TD-nzm" firstAttribute="top" secondItem="hj6-RI-7PH" secondAttribute="bottom" constant="9" id="VMe-wP-GOn"/>
+                    <constraint firstItem="cNy-dw-iUi" firstAttribute="leading" secondItem="8Xz-ah-1gg" secondAttribute="trailing" constant="8" id="xuF-CL-RDQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="content" destination="8Xz-ah-1gg" id="z8d-Gt-UgV"/>
+                <outlet property="days" destination="hyF-TD-nzm" id="IPV-0B-OgJ"/>
+                <outlet property="times" destination="hj6-RI-7PH" id="hC4-Bc-U8F"/>
+            </connections>
+            <point key="canvasLocation" x="305" y="384.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="object1_content_right" width="25" height="25"/>
+    </resources>
+</document>

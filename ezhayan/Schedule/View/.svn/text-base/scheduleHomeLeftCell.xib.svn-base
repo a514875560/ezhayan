@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="scheduleHomeLeftCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hhy-D8-eFe">
+                        <rect key="frame" x="160" y="0.0" width="1" height="53"/>
+                        <color key="backgroundColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="ICq-A6-215"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="schedule3_content_ico1n" translatesAutoresizingMaskIntoConstraints="NO" id="TCp-qD-J0w">
+                        <rect key="frame" x="154" y="12" width="13" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="5rD-Fi-BdS"/>
+                            <constraint firstAttribute="width" constant="13" id="Ims-bD-tik"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15:00-17:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lt1-xT-Mf6">
+                        <rect key="frame" x="181" y="34" width="69" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="4WS-Ru-X2E"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你是我的小呀小苹果" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS3-MR-aNj">
+                        <rect key="frame" x="181" y="10" width="120" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lt1-xT-Mf6" firstAttribute="leading" secondItem="dS3-MR-aNj" secondAttribute="leading" id="0ab-gy-WBR"/>
+                    <constraint firstItem="dS3-MR-aNj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="GRK-3s-RaN"/>
+                    <constraint firstAttribute="bottom" secondItem="Hhy-D8-eFe" secondAttribute="bottom" id="MrT-Am-a2i"/>
+                    <constraint firstItem="TCp-qD-J0w" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="OZc-RV-r0D"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dS3-MR-aNj" secondAttribute="trailing" constant="10" id="Xwx-QU-kAg"/>
+                    <constraint firstItem="Hhy-D8-eFe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cCy-Lm-ZYw"/>
+                    <constraint firstAttribute="bottom" secondItem="lt1-xT-Mf6" secondAttribute="bottom" constant="4" id="dPg-fG-0On"/>
+                    <constraint firstItem="lt1-xT-Mf6" firstAttribute="top" secondItem="dS3-MR-aNj" secondAttribute="bottom" constant="6" id="mO5-WW-eLp"/>
+                    <constraint firstItem="TCp-qD-J0w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="qLb-kI-AuS"/>
+                    <constraint firstItem="lt1-xT-Mf6" firstAttribute="leading" secondItem="Hhy-D8-eFe" secondAttribute="trailing" constant="20" id="vmD-fZ-H5m"/>
+                    <constraint firstItem="Hhy-D8-eFe" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="xE4-ap-2ci"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="content" destination="dS3-MR-aNj" id="Csk-gb-Jok"/>
+                <outlet property="finshImg" destination="TCp-qD-J0w" id="pgB-2x-8Lg"/>
+                <outlet property="time" destination="lt1-xT-Mf6" id="7E5-Y2-v05"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="schedule3_content_ico1n" width="13" height="13"/>
+    </resources>
+</document>

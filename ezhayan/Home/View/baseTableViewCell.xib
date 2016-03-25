@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="baseTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名称：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNL-yc-EUZ">
+                        <rect key="frame" x="15" y="16" width="48" height="20"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j6m-Xb-ysO">
+                        <rect key="frame" x="68" y="6" width="28" height="40"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="huM-wv-vzV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.37647058823529411" green="0.37647058823529411" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="zczl3_right" translatesAutoresizingMaskIntoConstraints="NO" id="5Zw-fn-I8J">
+                        <rect key="frame" x="300" y="16" width="10" height="18"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="bFC-cj-Mmc"/>
+                            <constraint firstAttribute="width" constant="10" id="ryC-sX-Srg"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d25-nP-5NA">
+                        <rect key="frame" x="254" y="12" width="36" height="28"/>
+                        <animations/>
+                        <state key="normal" image="zczl1_ico1"/>
+                        <connections>
+                            <action selector="didRightBut:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NHk-dS-MVN"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="fNL-yc-EUZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="1PJ-an-cjQ"/>
+                    <constraint firstItem="5Zw-fn-I8J" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="j6m-Xb-ysO" secondAttribute="trailing" constant="10" id="2Mk-Z5-q4S"/>
+                    <constraint firstItem="d25-nP-5NA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="4ON-oC-6EA"/>
+                    <constraint firstItem="j6m-Xb-ysO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EjT-qS-b7X"/>
+                    <constraint firstItem="5Zw-fn-I8J" firstAttribute="leading" secondItem="d25-nP-5NA" secondAttribute="trailing" constant="10" id="Fa9-Jd-jh6"/>
+                    <constraint firstItem="5Zw-fn-I8J" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GK5-Cs-OZz"/>
+                    <constraint firstAttribute="bottom" secondItem="j6m-Xb-ysO" secondAttribute="bottom" constant="5" id="S63-Db-fFx"/>
+                    <constraint firstItem="j6m-Xb-ysO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="ZZ9-pB-VYH"/>
+                    <constraint firstItem="fNL-yc-EUZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dMf-h5-3Ma"/>
+                    <constraint firstItem="j6m-Xb-ysO" firstAttribute="leading" secondItem="fNL-yc-EUZ" secondAttribute="trailing" constant="5" id="dgS-1M-l89"/>
+                    <constraint firstAttribute="trailing" secondItem="5Zw-fn-I8J" secondAttribute="trailing" constant="10" id="po6-sr-dnA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="content" destination="j6m-Xb-ysO" id="F4D-tw-qec"/>
+                <outlet property="name" destination="fNL-yc-EUZ" id="PrE-4L-aqD"/>
+                <outlet property="rightBut" destination="d25-nP-5NA" id="7rF-sV-0vg"/>
+                <outlet property="rightImage" destination="5Zw-fn-I8J" id="7VQ-ga-gxn"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="zczl1_ico1" width="36" height="28"/>
+        <image name="zczl3_right" width="10" height="18"/>
+    </resources>
+</document>
